@@ -4,7 +4,7 @@ interface props {
 import { cates } from "../cates";
 const ExpenseFilter = ({ selfu }: props) => {
   return (
-    <div className="pb-3">
+    <div>
       <select
         name=""
         className="form-select"

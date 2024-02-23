@@ -2,6 +2,7 @@ import { useState } from "react";
 import ExpenseList from "./Components/Components/ExpenseList";
 import ExpenseForm from "./Components/Components/ExpenseForm";
 import ExpenseFilter from "./Components/Components/ExpenseFilter";
+import Heading from "./Components/Components/Heading";
 
 const App = () => {
   const [selectedcat, setselcat] = useState("");
@@ -13,6 +14,7 @@ const App = () => {
     : expval;
   return (
     <div>
+      <Heading />
       <ExpenseForm
         onsub={(data) =>
           setexp([...expval, { ...data, id: expval.length + 1 }])

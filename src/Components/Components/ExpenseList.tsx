@@ -11,8 +11,9 @@ interface ELprops {
 }
 
 const ExpenseList = ({ expenses, delfun }: ELprops) => {
+  if (expenses.length === 0) return null;
   return (
-    <table className="table table-bordered">
+    <table className="table table-bordered" width={"90vh"}>
       <thead>
         <tr>
           <th>Descrption</th>

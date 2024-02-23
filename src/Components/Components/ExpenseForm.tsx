@@ -51,6 +51,7 @@ const ExpenseForm = ({ onsub }: props) => {
         />
         {errors.Name && <p className="text-danger">{errors.Name.message}</p>}
       </div>
+
       <div className="mb-3">
         <label htmlFor="Amount" className="form-label">
           Amount
